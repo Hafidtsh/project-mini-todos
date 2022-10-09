@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useState } from "react";
+import "./App.css";
+import { AddTodos, ListTodos } from "./component";
+// import { ListTodos } from "./component/ListTodos";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className="mt-10 text-4xl">Aplikasi Todos</h1>
+      <hr />
+      <AddTodos />
+      <hr />
+      <div className="w-[600px] my-0 mx-auto border border-none rounded-lg p-6 bg-slate-100">
+        <ListTodos />
+      </div>
+    </>
   );
 }
 
