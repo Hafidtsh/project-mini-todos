@@ -1,12 +1,13 @@
 // import { useState } from "react";
 import "./App.css";
 import { AddTodos, ListTodos } from "./component";
+import Navbar from "./component/Navbar/Navbar";
 // import { ListTodos } from "./component/ListTodos";
 
 function App() {
   return (
     <>
-      <h1 className="mt-10 text-4xl">Aplikasi Todos</h1>
+      <Navbar />
       <hr />
       <AddTodos />
       <hr />
